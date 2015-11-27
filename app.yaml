@@ -1,0 +1,15 @@
+# application identifier
+application: helloworld
+# if you adjust this before uploading new versions, App Engine retains previous
+version: 1
+# specifies the runtime environment and version used
+runtime: go
+api_version: go1
+
+# every request to a URL whose path matches the regex should be handled by Go app
+handlers:
+- url: /.*
+  # 'magic string' recognized by the dev web server, ignored by production
+  script: _go_app
+
+# all Go packages for a given app are built into a single executable

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular + Go To-do List</title>
+  </head>
+  <body>
+    <h3>Angular/Go Todo List</h3>
+
+    <ng ui-view/>
+
+    <!-- bower injection -->
+    <script src="./lib/angular/angular.min.js" charset="utf-8"></script>
+    <script src="./lib/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
+
+    <!-- script injection -->
+    <script src="./app.module.js" charset="utf-8"></script>
+    <script src="./app.route.js" charset="utf-8"></script>
+    <script src="./home/home.controller.js" charset="utf-8"></script>
+    <script src="./home/home.factory.js" charset="utf-8"></script>
+
+  </body>
+</html>
